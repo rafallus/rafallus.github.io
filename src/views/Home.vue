@@ -20,7 +20,7 @@
       <p>
         I'm a programmer and a modest contributor to the <a href="https://godotengine.org" target="_blank"><b>Godot Game Engine</b></a>.
         I've experience coding in <b>GDScript</b>, <b>C++</b>, <b>GDNative</b> and <b>Nim</b>.
-        I've worked in 3D and 2D projects in addition to UI design.
+        I've worked on 3D and 2D projects in addition to UI design.
         I'm also a 3D modeling enthusiast and know how to use <a href="https://blender.org" target="_blank"><b>Blender</b></a> at a basic level.
       </p>
     </div>
