@@ -1,30 +1,92 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <Header />
+  <main id="main">
+    <router-view/>
+  </main>
+  <Footer />
 </template>
 
+<script>
+import Header from '@/components/Header.vue'
+import Content from '@/components/Content.vue'
+import Footer from '@/components/Footer.vue'
+
+export default {
+  components: { Header, Content, Footer }
+}
+</script>
+
+
 <style>
+:root {
+    --background: #040814;
+    --light: #eaeaea;
+    --primary: #3DBE00;
+    --secondary: #DC6900;
+    --tertiary: #1a1c27;
+    --primary-light: #b6ee9c;
+    --secondary-light: #ebccaf;
+    --link: #9dd1f0;
+    --container-max-width: 1290px;
+    --container-width-base: calc(90vw - var(--frame-size, 0px) * 2);
+    --container-width: min(100%, var(--container-width-base));
+}
+
+html {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+body {
+  background: var(--background);
+  color: var(--light);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+#main {
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto 6em auto;
+  padding: 0 20px;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+.section h2 {
   text-align: center;
-  color: #2c3e50;
+  font-size: 1.75em;
+  padding-bottom: 1em;
 }
 
-#nav {
-  padding: 30px;
+.info, .success, .warning, .error, .validation {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    border-radius: 8px;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.error{
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('https://i.imgur.com/GnyDvKN.png');
 }
 </style>
