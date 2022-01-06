@@ -18,10 +18,10 @@
         </ul>
       </nav>
       <div class="social-networks pure-u-1-3">
-        <a href="#">
+        <a href="https://twitter.com/rafallus_">
           <img :src="require('@/assets/icons/twitter.svg')" alt="Twitter" title="Twitter"/>
         </a>
-        <a href="#">
+        <a href="https://github.com/rafallus">
           <img :src="require('@/assets/icons/github.svg')" alt="GitHub" title="GitHub" />
         </a>
         <a href="#">
@@ -75,7 +75,7 @@ export default {
 
 #footer > div {
   padding-top: 1.6em;
-  padding-bottom: 1.6em;
+  padding-bottom: 1em;
 }
 
 #footer a {

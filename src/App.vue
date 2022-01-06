@@ -8,11 +8,10 @@
 
 <script>
 import Header from '@/components/Header.vue'
-import Content from '@/components/Content.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
-  components: { Header, Content, Footer }
+  components: { Header, Footer }
 }
 </script>
 
@@ -27,6 +26,7 @@ export default {
     --primary-light: #b6ee9c;
     --secondary-light: #ebccaf;
     --link: #9dd1f0;
+    --less-dark: #131c25;
     --container-max-width: 1290px;
     --container-width-base: calc(90vw - var(--frame-size, 0px) * 2);
     --container-width: min(100%, var(--container-width-base));

@@ -25,6 +25,9 @@
       </p>
     </div>
     <div class="section">
+      <Games />
+    </div>
+    <div class="section">
       <PullRequests />
     </div>
   </div>
@@ -32,11 +35,13 @@
 
 <script>
 import PullRequests from '@/components/PullRequests.vue'
+import Games from '@/components/Games.vue'
 
 export default {
   name: 'Home',
   components: {
-    PullRequests
+    PullRequests,
+    Games
   }
 }
 </script>
