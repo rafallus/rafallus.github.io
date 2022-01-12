@@ -50,6 +50,8 @@ export default {
 #home #hero {
   padding: 2em 0;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 #home #hero .hero-img {
