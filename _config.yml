@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Rafael M Gordillo
+title: Rafael M. Gordillo
 subtitle: Game Developer | Open Source Contributor | Tech Enthusiast
 email: rafaelmtzg@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -29,27 +29,11 @@ logo: "/assets/images/logo.png"
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
 timezone: America/Mexico_City # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 locale: "en-US"
 
 include:
   - _pages
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 
 # Plugins (previously gems:)
 plugins:
@@ -61,9 +45,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Rafael M Gordillo"
+  name   : "Rafael M. Gordillo"
   avatar : "/assets/images/bio-photo.webp"
-  bio    : "Game developer | Open Source Contributor | Tech Enthusiast"
+  bio    : "Godot game developer."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -90,6 +74,11 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/rafael-martinez-gordillo-62400076/"
 
+collections:
+  projects:
+    output: true
+    permalink: '/:collection/:name'
+
 defaults:
   # _posts
   - scope:
@@ -109,10 +98,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _projects
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: single
+      author_profile: true
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/

@@ -1,0 +1,22 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<h2 id="projects">Projects</h2>
+
+<div class="cards-grid">
+  {% for project in site.projects %}
+  <a href="{{ project.url }}" class="card-link">
+    <div class="card" style="background-image: url('/assets/images/{{ project.short }}.webp');">
+      <div>
+        <img src="/assets/images/{{ project.short }}_icon.png" alt="{{ project.name }}">
+      </div>
+      <strong> {{ project.name }} </strong>
+      <div class="card__body">{{ project.genre }}</div>
+      <span>Read more...</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
