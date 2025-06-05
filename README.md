@@ -1,3 +1,17 @@
+# TODO
+
+- [ ] Experience timeline in Home
+- [ ] Contact in Home
+- [ ] Dungeons page
+- [ ] EoC page
+- [ ] Godot page
+- [ ] RK page
+- [ ] Ubercold page
+- [ ] Uctrl page
+- [ ] About
+- [x] Improve short bio
+- [ ] Add resume
+
 # Execute
 
 `bundle exec jekyll serve`

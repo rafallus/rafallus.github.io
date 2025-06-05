@@ -18,8 +18,8 @@ subtitle: Game Developer | Open Source Contributor | Tech Enthusiast
 email: rafaelmtzg@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Game developer portfolio. Here you will find my projects and resume.
-url: https://rafallus.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
+url: https://rafallus.github.io
 twitter_username: RafaelMGor
 github_username: rafallus
 minimal_mistakes_skin: neon
@@ -47,7 +47,7 @@ plugins:
 author:
   name   : "Rafael M. Gordillo"
   avatar : "/assets/images/bio-photo.webp"
-  bio    : "Godot game developer."
+  bio    : "Experienced game developer and open source advocate, passionate about creating engaging experiences and learning new technologies. Always eager to collaborate and share knowledge."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
