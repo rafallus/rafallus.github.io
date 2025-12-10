@@ -1173,10 +1173,12 @@ textarea {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.5);
         padding: var(--space-md) 0;
         border-bottom: 1px solid var(--border-color);
+        display: none; /* completely hide nav menu when hamburger shows */
     }
 
     .nav-menu.active {
         left: 0;
+        display: flex; /* show when active */
     }
 
     .hamburger {
