@@ -929,16 +929,30 @@ textarea {
 
 .bio-image {
     position: relative;
-    border-radius: 16px;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
     overflow: hidden;
     box-shadow: var(--shadow-lg);
+    justify-self: center;
+    align-self: start;
+    margin-top: 0;
 }
 
 .bio-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
-    border-radius: 16px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+@media (max-width: 600px) {
+    .bio-image {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+    }
 }
 
 .bio-text h1 {
