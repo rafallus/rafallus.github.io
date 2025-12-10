@@ -403,7 +403,7 @@ li {
 .project-icon {
     width: 80px;
     height: 80px;
-    margin-bottom: var(--space-md);
+    margin: 0 auto var(--space-md); /* center horizontally inside card */
     display: flex;
     align-items: center;
     justify-content: center;
