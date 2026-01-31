@@ -127,7 +127,7 @@ Works on all modern browsers (Chrome, Firefox, Safari, Edge)
 
 1. **Social Links**: Already configured with your profiles
    - Twitter/X: https://x.com/RafaelMGor
-   - GitHub: https://github.com/rafallus
+   - GitHub: https://github.com/TopScales
    - LinkedIn: https://www.linkedin.com/in/rafael-martinez-gordillo-62400076
 
 2. **Project Links**: All linking to your actual projects
